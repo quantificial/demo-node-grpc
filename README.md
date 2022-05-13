@@ -1,4 +1,4 @@
-## simple node GRPC Demo
+## simple nodejs gRPC Demo
 
 npm init -y
 
