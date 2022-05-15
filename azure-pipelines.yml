@@ -22,3 +22,15 @@ stages:
         npm install
         #npm run build
       displayName: 'npm install and build'
+- stage: DevDeploy
+  jobs:
+  - deployment: DevDeployJob
+    environment: dev
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: echo "deploy to Dev"
+          
+          
+  
